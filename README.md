@@ -40,20 +40,14 @@
 
 ## Использованный материал (английский язык):
 
-[Пьер Вандевенн](https://plus.google.com/+PierreVandevenne)
+[Статья про микроконтроллер](http://type1tennis.blogspot.com.br/2015/01/freestyle-libre-raw-data-ti-update.html)
 
-Medical Doctor turned IT Security specialist
-
-[Type I Diabetes, Coeliac Disease, Tennis](http://type1tennis.blogspot.com.br)
-
-[про Микроконтроллер](http://type1tennis.blogspot.com.br/2015/01/freestyle-libre-raw-data-ti-update.html)
-
-[про Сенсор](http://type1tennis.blogspot.com.br/2015_01_01_archive.html)
+[Статья про сенсор](http://type1tennis.blogspot.com.br/2015_01_01_archive.html)
 
 
 [Ченгиз, Эда и Уильям В. Тамборлейн. «Рассказ о двух отсеках: интерстициальном и мониторинге уровня глюкозы в крови». Диабетическая технология и терапия 11.S1 (2009): S-11.](http://online.liebertpub.com/doi/abs/10.1089/dia.2009.0002)
 
-##Оборудование для быстрого прототипирования (LaunchPad)
+## Оборудование для быстрого прототипирования (LaunchPad)
 
 [RF430FRL152HEVM](http://www.ti.com/tool/RF430FRL152HEVM)
 
