@@ -1,74 +1,67 @@
 # Freestyle Sensor Libre
 
-Este projeto destina-se a popularizar os estudos na área de monitoramento de Glicose. É usado como base o sensor da empresa FreeStyle. Este sensor tem um custo muito alto no Brasil, já que não há concorrência.
-O objetivo aqui não é copiar o sensor para produzir no Brasil e nem violar nenhuma patente. A idéia é apenas que engenheiros brasileiros se interessem por esta área que é muito potencial e devido a falta de concorrência permite que empresas que detem o monopólio não se preocupem distribuir esses produtos de forma mais acessível.
+Чип Ti [RF430TAL152H](http://www.ti.com/product/RF430FRL152H/technicaldocuments) через АЦП.
 
-Ao longo do tempo publicarei Esquemáticos, Firmware e métodos para cálculo de Glicóse a partir do Chip [RF430TAL152H](http://www.ti.com/product/RF430FRL152H/technicaldocuments) da Texas através do ADC.
+В данном изделии используется микроконтроллер RF430TAL152H, TI продает его под названием RF430RFL152H. Это тонкое различие оказалось просто номенклатурой, позволяющей отличить партию, посвященную этому продукту. Однако, анализируя электрическую схему, соединения выводов микроконтроллера не кажутся одинаковыми. Это может затруднить использование оригинального оборудования для тестирования прошивки, но не предотвратить его.
 
-OBS: O microcontrolador usado neste produto é o RF430TAL152H, a Texas comercializa com o nome RF430RFL152H. Essa sutil diferença aparentava ser apenas uma nomenclatura para distinguir o lote dedicado a este produto. Entretanto, analisando o circuito elétrico, as conexões dos pinos do microcontrolador não parecem ser iguais. Isso pode dificultar a utilização do hardware original para testes de firmware, mas não impedir.
+Ниже приведено описание датчика, сделанное производителем:
 
+## Датчик
 
-Quem estiver interessado em colaborar entre em contato.
+Датчик FreeStyle Libre прост в применении и использовании. Маленький и сдержанный.
 
-Abaixo segue a descrição do sensor feita pelo fabricante:
+ВАЖНО: Система мониторинга FreeStyle Libre Flash предназначена для измерения уровня глюкозы в интерстициальной жидкости у взрослых в возрасте 18 лет и старше.
 
-## Sensor
+Как использовать датчик FreeStyle Libre
 
-O sensor do FreeStyle Libre foi projetado para ser fácil de aplicar e usar. Pequeno e discreto.
+#### Применение датчика
+Датчик FreeStyle Libre следует накладывать на тыльную сторону плеча с помощью простого одноразового устройства, называемого «аппликатор». При наложении датчика под кожу вводится небольшая стерильная гибкая нить. Он остается зафиксированным на месте благодаря клеевому слою.
 
-IMPORTANTE: O Sistema Flash de Monitoramento FreeStyle Libre é indicado para medir níveis da glicose no fluído intersticial em adultos com 18 anos ou mais.
+#### Сканирование
+Чтобы измерить уровень глюкозы, просто отсканируйте датчик с помощью считывателя — это быстрый и безболезненный процесс, который занимает всего 1 секунду. Это считывание дает больше информации, чем мониторинг, проводимый с помощью тест-полосок для определения уровня глюкозы в крови, без необходимости рутинных проколов пальца. Система FreeStyle Libre также предлагает программное обеспечение, которое создает краткие отчеты, помогающие в анализе данных об уровне глюкозы.
 
-Como usar o sensor do FreeStyle Libre
-
-#### Aplique o sensor
-O sensor do FreeStyle Libre deve ser aplicado na parte posterior superior do braço com um dispositivo simples e descartável chamado "aplicador". Quando o sensor é aplicado, um pequeno filamento estéril e flexível é inserido sob a pele. Ele permanece fixo no local graças a uma camada adesiva.
-
-#### Escaneie o sensor
-Para fazer a leitura da glicose, basta escanear o sensor com o leitor – um processo rápido e indolor3 que leva apenas 1 segundo. Essa leitura fornece mais informações do que o monitoramento realizado através de tiras de teste de glicose sanguínea, sem a necessidade das rotineiras picadas no dedo1. O sistema FreeStyle Libre também oferece um software que gera relatórios concisos para auxiliar na análise dos dados da glicose.
-
-#### Faça a leitura
-Cada leitura do sensor fornece dados atualizados da glicose, o histórico glicêmico das últimas 8 horas e uma seta de tendência mostrando se a glicose está subindo, baixando ou mudando lentamente. O leitor é capaz de ler o sensor mesmo através da roupa2.
+#### Чтение сенсора
+Каждое показание сенсора предоставляет актуальные данные об уровне глюкозы, историю уровня глюкозы за последние 8 часов и стрелку тренда, показывающую, повышается ли ваш уровень глюкозы, падает ли он или медленно меняется. Считыватель может считывать датчик даже через одежду2.
 
 
-##Hardware
-
+## Схема устройства
 ![Screenshot](HW-FreestyleSensorLibre/draw_1116_1.png)
 
-##Fita de Leitura
+## Считывающий усик
 ![Screenshot](HW-FreestyleSensorLibre/draw_1116-40.png)
 
-##Trabalhos usados como Referência:
+## Использованный материал (португальский язык):
 
-[Andrade, Arnaldo César Dantas dos Santos. "Desenvolvimento de Dispositivo Eletrônico e Sensor Plasmônico para Detecção de Glicose." (2013).](http://repositorio.ufpe.br/handle/123456789/12213)
+[Андраде, Арнальдо Сезар Дантас душ Сантуш. «Разработка электронного устройства и плазмонного датчика для определения уровня глюкозы». (2013).](http://repositorio.ufpe.br/handle/123456789/12213)
 
-[Santos, Jaciara Cássia de Carvalho. Imobilização da enzima glicose oxidase em filmes nanoestruturados para aplicação em biossensores. Diss. Universidade de São Paulo, 2012.](http://www.teses.usp.br/teses/disponiveis/76/76131/tde-11102012-163617/en.php)
+[Сантос, Хасиара Кассия де Карвалью. Иммобилизация фермента глюкозооксидазы в наноструктурированных пленках для применения в биосенсорах. Дисс. Университет Сан-Паулу, 2012 г.](http://www.teses.usp.br/teses/disponiveis/76/76131/tde-11102012-163617/en.php)
 
-[Moreira, Cleumar S., et al. "Biossensores: Tecnologia e Aplicações." V Congresso Norte Nordeste de Pesquisa e Inovação [online]. 2010.](http://www.biologia.seed.pr.gov.br/arquivos/File/biotecnologia/biosensores.pdf)
+[Морейра, Клеумар С. и др. «Биосенсоры: технологии и приложения». V Северо-Северо-Восточный конгресс исследований и инноваций [онлайн]. 2010.](http://www.biologia.seed.pr.gov.br/arquivos/File/biotecnologia/biosensores.pdf)
 
-##Referências em inglês
+## Использованный материал (английский язык):
 
-[Pierre Vandevenne](https://plus.google.com/+PierreVandevenne)
+[Пьер Вандевенн](https://plus.google.com/+PierreVandevenne)
 
 Medical Doctor turned IT Security specialist
 
 [Type I Diabetes, Coeliac Disease, Tennis](http://type1tennis.blogspot.com.br)
 
-[about Microcontroler](http://type1tennis.blogspot.com.br/2015/01/freestyle-libre-raw-data-ti-update.html)
+[про Микроконтроллер](http://type1tennis.blogspot.com.br/2015/01/freestyle-libre-raw-data-ti-update.html)
 
-[about Sensor](http://type1tennis.blogspot.com.br/2015_01_01_archive.html)
+[про Сенсор](http://type1tennis.blogspot.com.br/2015_01_01_archive.html)
 
 
-[Cengiz, Eda, and William V. Tamborlane. "A tale of two compartments: interstitial versus blood glucose monitoring." Diabetes technology & therapeutics 11.S1 (2009): S-11.](http://online.liebertpub.com/doi/abs/10.1089/dia.2009.0002)
+[Ченгиз, Эда и Уильям В. Тамборлейн. «Рассказ о двух отсеках: интерстициальном и мониторинге уровня глюкозы в крови». Диабетическая технология и терапия 11.S1 (2009): S-11.](http://online.liebertpub.com/doi/abs/10.1089/dia.2009.0002)
 
-##Hardware de Prototipação Rápido (LaunchPad)
+##Оборудование для быстрого прототипирования (LaunchPad)
 
 [RF430FRL152HEVM](http://www.ti.com/tool/RF430FRL152HEVM)
 
 ![Screenshot](http://www.ti.com/diagrams/med_rf430frl152hevm_rf430frl152hevm-1.jpg)
 
-O módulo de avaliação RF430FRL152HEVM é uma plataforma de desenvolvimento autônoma que pode ser usada para avaliar os recursos e o desempenho do transponder de sensor NFC RF430FRL15xH compatível com ISO 15693. A placa de avaliação pode ser alimentada por uma bateria, por USB ou por indução de RF a partir de um leitor ou smartphone NFC com capacidade de exibição. O código de aplicativo incorporado na ROM gerencia a comunicação de RF e as leituras de sensores para fornecer a máxima flexibilidade na configuração do dispositivo. Os programadores podem configurar taxas de amostragem, limiares de medição e alarmes. A memória não volátil universal de 2kByte (FRAM) permite o armazenamento de dados, bem como a extensão e o ajuste do código da aplicação. Para uma maior expansão, a placa de avaliação é compatível com vários BoosterPacks do ecossistema de protótipos rápidos LaunchPad de baixo custo da TI, como o Sensor Hub BoosterPack que oferece conectividade para sensores adicionais.
+Оценочный модуль RF430FRL152HEVM представляет собой автономную платформу разработки, которую можно использовать для оценки функций и производительности транспондера датчика NFC RF430FRL15xH.RF, совместимого со стандартом ISO 15693, с помощью считывателя NFC или смартфона с возможностью отображения. Код приложения, встроенный в ПЗУ, управляет радиочастотной связью и показаниями датчиков, обеспечивая максимальную гибкость конфигурации устройства. Программисты могут настраивать частоты дискретизации, пороги измерения и сигналы тревоги. Универсальная энергонезависимая память объемом 2 КБ (FRAM) позволяет хранить данные, а также расширять и настраивать код приложения. Для дальнейшего расширения оценочная плата совместима с несколькими BoosterPacks из недорогой экосистемы быстрого прототипирования LaunchPad от TI, такими как BoosterPack Sensor Hub, который обеспечивает подключение дополнительных датчиков.
 
-O módulo de avaliação pode ser usado para avaliar o Transponder de Sensor NFC para uma variedade de aplicações tais wearables e patches de saúde e fitness.
+Модуль оценки можно использовать для оценки транспондера датчика NFC для различных приложений, таких как носимые устройства и пластыри для здоровья и фитнеса.
 
 ![Screenshot](https://www.element14.com/community/dtss-images/uploads/devtool/diagram/large/9e1865ffe1909dbc011ffe36c0c5c85e.png)
 
